@@ -1,0 +1,13 @@
+<h2><%= @cocktail.name %></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque mollitia quas aliquid quasi reiciendis? Fuga ab hic animi deleniti laudantium! Tenetur in sit pariatur, nobis unde dolor, architecto. Exercitationem, ipsa!</p>
+
+<h4>Doses :</h4>
+
+<% @doses.each do |dose| %>
+  <p>"<%= dose.description %>"</p> <%= link_to "Delete", article_path,
+      method: :delete,
+      data: { confirm: "Are you sure?" } %></h1>
+<% end %>
+
+<%= link_to "Add a dose", new_cocktail_review_path(@cocktail) %>
+
