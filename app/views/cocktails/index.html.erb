@@ -1,7 +1,12 @@
-<h1>Cocktails List</h1>
+<div class="">
 
-<% @cocktails.each do |cocktail| %>
-  <h3><%= link_to "#{cocktail.name}", cocktail_path(cocktail) %></h3>
-<% end %>
+</div>
+<div class="container">
+  <h1>Cocktails List</h1>
 
-<%= link_to "Add a new cocktail", new_cocktail_path %>
+  <% @cocktails.each do |cocktail| %>
+    <h3><%= link_to "#{cocktail.name}", cocktail_path(cocktail) %></h3>
+  <% end %>
+
+  <%= link_to "Add a new cocktail", new_cocktail_path %>
+</div>
